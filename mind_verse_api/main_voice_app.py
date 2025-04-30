@@ -8,7 +8,7 @@ import requests
 from io import BytesIO
 from mind_verse_api.shared.constants import GEMINI_API_KEY, ELEVEN_LABS_API_KEY
 from flask_cors import CORS  # Import the CORS package
-from elevenlabs_api import TextToSpeechService
+from .elevenlabs_api import TextToSpeechService
 
 warnings.simplefilter('ignore')
 
