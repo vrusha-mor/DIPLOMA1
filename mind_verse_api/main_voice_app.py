@@ -10,6 +10,12 @@ from mind_verse_api.shared.constants import GEMINI_API_KEY, ELEVEN_LABS_API_KEY
 from flask_cors import CORS  # Import the CORS package
 from .elevenlabs_api import TextToSpeechService
 
+import sys
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+
 warnings.simplefilter('ignore')
 
 app = Flask(__name__)

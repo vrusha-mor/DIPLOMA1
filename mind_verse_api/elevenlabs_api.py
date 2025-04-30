@@ -4,6 +4,11 @@ from dotenv import load_dotenv
 from io import BytesIO
 from elevenlabs.client import ElevenLabs
 from shared.constants import ELEVEN_LABS_API_PAID_KEY, ELEVEN_LABS_API_KEY
+import sys
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 
 class TextToSpeechService:
     def __init__(self):
